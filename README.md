@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/weegienamja/weegienamja/main/banner.png" alt="Jamie Blair, software engineer at Cisco, Glasgow" width="100%" />
+  <img src="https://raw.githubusercontent.com/weegienamja/weegienamja/main/banner.gif" alt="Jamie Blair, software engineer at Cisco, Glasgow" width="100%" />
 </p>
 
 <h1 align="center">Hey, I'm Jamie 👋</h1>

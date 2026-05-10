@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./banner.svg" alt="Jamie Blair — software engineer at Cisco, Glasgow" width="100%"/>
+  <img src="https://raw.githubusercontent.com/weegienamja/weegienamja/main/banner.svg" alt="Jamie Blair, software engineer at Cisco, Glasgow" width="100%" />
 </p>
 
 I work on networking automation and internal tooling at Cisco by day, and on side projects with no business case and no deadline by night. CCNA-certified, finishing a BSc at Glasgow Caledonian, fluent in being mildly annoyed by manual processes.

@@ -4,7 +4,7 @@
 
 I work on networking automation and internal tooling at Cisco by day, and on side projects with no business case and no deadline by night. CCNA-certified, finishing a BSc at Glasgow Caledonian, fluent in being mildly annoyed by manual processes.
 
-The thing I find most interesting right now is the seam between networking and AI agents — using LLMs as an execution layer over real infrastructure, not as a chatbot bolted onto a dashboard. Most of my recent work is some variation of that.
+The thing I find most interesting right now is the seam between networking and AI agents. I use LLMs as an execution layer over real infrastructure, not as a chatbot bolted onto a dashboard. Most of my recent work is some variation of that.
 
 ### Currently building
 

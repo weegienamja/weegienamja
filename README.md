@@ -100,12 +100,8 @@ type BuildStyle = {
 ## GitHub stats
 
 <p align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img height="180" src="https://github-readme-stats.vercel.app/api?username=weegienamja&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Jamie's GitHub stats" />
-  </a>
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=weegienamja&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" alt="Top languages" />
-  </a>
+  <img height="180" src="https://github-readme-stats-flame-theta-45.vercel.app/api?username=weegienamja&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Jamie's GitHub stats" />
+  <img height="180" src="https://github-readme-stats-flame-theta-45.vercel.app/api/top-langs/?username=weegienamja&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" alt="Top languages" />
 </p>
 
 ---

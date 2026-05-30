@@ -5,7 +5,7 @@
 <h1 align="center">Hey, I'm Jamie 👋</h1>
 
 <p align="center">
-  <em>Networking automation, AI tooling and side-project chaos.</em>
+  <em>Network automation, AI tooling, and product side projects.</em>
 </p>
 
 <p align="center">
@@ -30,20 +30,18 @@ role:        Software Engineer at Cisco
 focus:       [network automation, AI tooling, internal platforms, product systems]
 stack:       [Python, TypeScript, Next.js, Prisma, Pydantic, SQL]
 certs:       [CCNA]
-building:    [WindForge, PitchEdge Analytics, GlobeScraper, MCP tooling]
+building:    [WindForge, PitchEdge Analytics, GlobeScraper, WaveMind, MCP tooling]
 bias:        "self-serve beats high-touch"
-escape_plan: "Cambodia, laptop, motorbike, zero unnecessary meetings"
+long_term:   "Cambodia, building self-serve software"
 ```
 
 ---
 
-## What I work on
+## What I'm into
 
-I work on networking automation and internal tooling at Cisco by day, and on side projects with no business case and no deadline by night.
+By day I build network automation and internal tooling at Cisco. By night I build things with no business case and no deadline, mostly because something looked too manual to leave alone.
 
-The thing I find most interesting right now is the seam between networking and AI agents. I use LLMs as an execution layer over real infrastructure, not as a chatbot bolted onto a dashboard.
-
-Most of my recent work is some variation of that.
+The part I keep coming back to is where networking meets AI agents: using an LLM as an execution layer over real infrastructure rather than a chatbot stapled to a dashboard. Most of my recent work is some version of that idea.
 
 ---
 
@@ -51,10 +49,11 @@ Most of my recent work is some variation of that.
 
 | Project | What it is | Stack |
 |---|---|---|
-| **[WindForge](https://github.com/weegienamja/WindForge)** | Wind turbine site screening engine using terrain, grid, land use and planning heuristics. Around 680 tests. | TypeScript, Turborepo, Vitest |
+| **[WindForge](https://github.com/weegienamja/WindForge)** | A wind turbine site screening engine that weighs terrain, grid access, land use, and planning heuristics. | TypeScript, Turborepo, Vitest |
 | **[Anime-AI-Upscaler](https://github.com/weegienamja/Anime-AI-Upscaler)** | Desktop app for AI upscaling and frame interpolation. | Electron, React, TypeScript |
-| **vManage MCP Server** | 20-tool MCP server over Cisco SD-WAN telemetry, with a correlation engine. | Python, Pydantic v2, MCP |
-| **PitchEdge Analytics** | Scottish football intelligence platform for team performance, predictions and recruitment analysis. | Next.js, Prisma, TypeScript |
+| **[WaveMind](https://github.com/weegienamja/WaveMind)** | A native Windows app that turns system audio (or any video/audio file you drop on it) into a live transcript via the OpenAI API. Single self-contained .exe, no install. | C++23, Dear ImGui, OpenAI API |
+| **vManage MCP Server** | A 20-tool MCP server over Cisco SD-WAN telemetry, with a correlation engine on top. | Python, Pydantic v2, MCP |
+| **PitchEdge Analytics** | Scottish football intelligence: team performance, predictions, and recruitment analysis. | Next.js, Prisma, TypeScript |
 | **GlobeScraper** | Cambodia relocation and rental data platform. | Next.js, Prisma, SQL |
 
 ---
@@ -73,26 +72,15 @@ Most of my recent work is some variation of that.
   <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel" />
 </p>
 
-```ts
-type BuildStyle = {
-  defaultMode: "self-serve";
-  favouriteProblems: ["manual workflows", "messy data", "unclear systems"];
-  stackBias: ["TypeScript", "Python", "SQL", "strict validation"];
-  productRule: "useful first, pretty second";
-  meetingTolerance: "low";
-};
-```
-
 ---
 
-## Operating principles
+## How I build
 
 - Make the repeated thing automatic.
 - Make the vague thing visible.
 - Make the manual thing self-serve.
 - Keep types strict and boundaries clear.
-- Use AI against real tools, APIs and infrastructure.
-- Do not fake intelligence with a dashboard.
+- Point AI at real tools, APIs, and infrastructure rather than faking it with a dashboard.
 - Build the small version first, then make it harder to ignore.
 
 ---
@@ -116,11 +104,11 @@ type BuildStyle = {
 ---
 
 <p align="center">
-  <em>Building tools for networks, data, football, wind, travel and anything else that looks unnecessarily manual.</em>
+  <em>Building tools for networks, data, football, wind, travel, and anything else that looks unnecessarily manual.</em>
 </p>
 
 <p align="center">
-  <code>Glasgow now</code> · <code>Phnom Penh eventually</code> · <code>meetings reluctantly</code>
+  <code>Glasgow now</code> · <code>Phnom Penh eventually</code>
 </p>
 
 <p align="center">

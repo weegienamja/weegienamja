@@ -1,116 +1,39 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/weegienamja/weegienamja/main/banner.gif" alt="Jamie Blair, software engineer at Cisco, Glasgow" width="100%" />
-</p>
-
-<h1 align="center">Hey, I'm Jamie 👋</h1>
-
-<p align="center">
-  <em>Network automation, AI tooling, and product side projects.</em>
+  <img src="https://raw.githubusercontent.com/weegienamja/weegienamja/main/assets/profile.svg?v=8e8367d6b7" width="100%" alt="Jamie Blair | systems, networks and applied AI" />
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/jamie-blair-glasgow/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://jamieblair.co.uk">
-    <img src="https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
-  </a>
-  <img src="https://img.shields.io/badge/Glasgow,_UK-005EB8?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Glasgow, UK" />
-  <img src="https://img.shields.io/badge/CCNA-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" alt="CCNA Certified" />
+  <a href="https://jamieblair.co.uk">Portfolio</a>&nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/jamie-blair-glasgow/">LinkedIn</a>&nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://github.com/weegienamja?tab=repositories">Repositories</a>
 </p>
 
----
+## Selected systems
 
-## The short version
+<!-- PROFILE:PROJECTS:START -->
 
-```yaml
-name:        Jamie Blair
-based:       Glasgow, Scotland
-role:        Software Engineer at Cisco
-focus:       [network automation, AI tooling, internal platforms, product systems]
-stack:       [Python, TypeScript, Next.js, Prisma, Pydantic, SQL]
-certs:       [CCNA]
-building:    [WindForge, PitchEdge Analytics, GlobeScraper, WaveMind, MCP tooling]
-bias:        "self-serve beats high-touch"
-long_term:   "Cambodia, building self-serve software"
-```
+**[Switch-Ops](https://github.com/weegienamja/Switch-Ops)**  
+Network discovery and operations tooling for Cisco infrastructure.  
+`TypeScript · v0.8`
 
----
+**[Faultline-Network-Diagnostics](https://github.com/weegienamja/Faultline-Network-Diagnostics)**  
+Local-first network investigation, diagnostics and change assurance.  
+`TypeScript`
 
-## What I'm into
+**[sdwan-mcp-server](https://github.com/weegienamja/sdwan-mcp-server)**  
+Deterministic MCP tooling for investigating Cisco SD-WAN telemetry.  
+`Python`
 
-By day I build network automation and internal tooling at Cisco. By night I build things with no business case and no deadline, mostly because something looked too manual to leave alone.
+**[WindForge](https://github.com/weegienamja/WindForge)**  
+Wind infrastructure site screening built around geospatial constraints and decision logic.  
+`TypeScript`
 
-The part I keep coming back to is where networking meets AI agents: using an LLM as an execution layer over real infrastructure rather than a chatbot stapled to a dashboard. Most of my recent work is some version of that idea.
+<!-- PROFILE:PROJECTS:END -->
 
----
+## Current direction
 
-## Currently building
+I build software around **infrastructure, automation and applied AI**, with a preference for systems that expose real state instead of hiding it behind a conversational layer.
 
-| Project | What it is | Stack |
-|---|---|---|
-| **[WindForge](https://github.com/weegienamja/WindForge)** | A wind turbine site screening engine that weighs terrain, grid access, land use, and planning heuristics. | TypeScript, Turborepo, Vitest |
-| **[Anime-AI-Upscaler](https://github.com/weegienamja/Anime-AI-Upscaler)** | Desktop app for AI upscaling and frame interpolation. | Electron, React, TypeScript |
-| **[WaveMind](https://github.com/weegienamja/WaveMind)** | A native Windows app that turns system audio (or any video/audio file you drop on it) into a live transcript via the OpenAI API. Single self-contained .exe, no install. | C++23, Dear ImGui, OpenAI API |
-| **vManage MCP Server** | A 20-tool MCP server over Cisco SD-WAN telemetry, with a correlation engine on top. | Python, Pydantic v2, MCP |
-| **PitchEdge Analytics** | Scottish football intelligence: team performance, predictions, and recruitment analysis. | Next.js, Prisma, TypeScript |
-| **GlobeScraper** | Cambodia relocation and rental data platform. | Next.js, Prisma, SQL |
+The profile telemetry above is generated from my public GitHub repositories. Project selection, activity, languages, release tags and the cache key are refreshed automatically by GitHub Actions.
 
----
-
-## Stack
-
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" alt="Prisma" />
-  <img src="https://img.shields.io/badge/Postgres-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="Postgres" />
-  <img src="https://img.shields.io/badge/Cisco-1BA0D7?style=flat-square&logo=cisco&logoColor=white" alt="Cisco" />
-  <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel" />
-</p>
-
----
-
-## How I build
-
-- Make the repeated thing automatic.
-- Make the vague thing visible.
-- Make the manual thing self-serve.
-- Keep types strict and boundaries clear.
-- Point AI at real tools, APIs, and infrastructure rather than faking it with a dashboard.
-- Build the small version first, then make it harder to ignore.
-
----
-
-## GitHub stats
-
-<p align="center">
-  <img height="180" src="https://github-readme-stats-flame-theta-45.vercel.app/api?username=weegienamja&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Jamie's GitHub stats" />
-  <img height="180" src="https://github-readme-stats-flame-theta-45.vercel.app/api/top-langs/?username=weegienamja&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" alt="Top languages" />
-</p>
-
----
-
-## Find me elsewhere
-
-<p>
-  <a href="https://www.linkedin.com/in/jamie-blair-glasgow/">LinkedIn</a> ·
-  <a href="https://jamieblair.co.uk">jamieblair.co.uk</a>
-</p>
-
----
-
-<p align="center">
-  <em>Building tools for networks, data, football, wind, travel, and anything else that looks unnecessarily manual.</em>
-</p>
-
-<p align="center">
-  <code>Glasgow now</code> · <code>Phnom Penh eventually</code>
-</p>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=weegienamja&style=flat-square&color=1BA0D7" alt="Profile views" />
-</p>
+<sub>Glasgow, Scotland · CCNA · Software Development BSc</sub>

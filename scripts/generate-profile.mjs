@@ -243,14 +243,15 @@ async function updateReadme(featured, snapshotKey) {
 async function main() {
   const repos = await loadRepos();
   const featured = await enrichFeatured(repos);
+  const svg = buildSvg({ repos, featured });
   const snapshot = JSON.stringify({
     date: new Date().toISOString().slice(0, 10),
     repos: repos.map((r) => [r.id, r.name, r.pushed_at, r.stargazers_count, r.size, r.description, r.topics]),
     featured: featured.map((r) => [r.id, r.name, r.pushed_at, r.release?.tag_name || null]),
   });
-  const snapshotKey = createHash('sha256').update(snapshot).digest('hex').slice(0, 10);
+  const snapshotKey = createHash('sha256').update(`${snapshot}\n${svg}`).digest('hex').slice(0, 10);
 
-  await writeFile(OUTPUT, buildSvg({ repos, featured }));
+  await writeFile(OUTPUT, svg);
   await updateReadme(featured, snapshotKey);
   console.log(`Profile generated from ${repos.length} repositories; featured: ${featured.map((r) => r.name).join(', ')}`);
 }

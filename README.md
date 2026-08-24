@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/weegienamja/weegienamja/main/assets/profile.svg?v=8e8367d6b7" width="100%" alt="Jamie Blair | systems, networks and applied AI" />
+  <img src="https://raw.githubusercontent.com/weegienamja/weegienamja/main/assets/profile.svg?v=b05a36357a" width="100%" alt="Jamie Blair | systems, networks and applied AI" />
 </p>
 
 <p align="center">
@@ -13,20 +13,20 @@
 <!-- PROFILE:PROJECTS:START -->
 
 **[Switch-Ops](https://github.com/weegienamja/Switch-Ops)**  
-Network discovery and operations tooling for Cisco infrastructure.  
-`TypeScript · v0.8`
-
-**[Faultline-Network-Diagnostics](https://github.com/weegienamja/Faultline-Network-Diagnostics)**  
-Local-first network investigation, diagnostics and change assurance.  
-`TypeScript`
-
-**[sdwan-mcp-server](https://github.com/weegienamja/sdwan-mcp-server)**  
-Deterministic MCP tooling for investigating Cisco SD-WAN telemetry.  
-`Python`
+Local-first Cisco Catalyst operations with live telemetry, evidence-aware topology, state reconciliation, and…  
+`Python · v0.6.0`
 
 **[WindForge](https://github.com/weegienamja/WindForge)**  
-Wind infrastructure site screening built around geospatial constraints and decision logic.  
+Evidence-aware TypeScript tools and a public demo for preliminary wind-site screening; not a planning, compli…  
 `TypeScript`
+
+**[Faultline-Network-Diagnostics](https://github.com/weegienamja/Faultline-Network-Diagnostics)**  
+Open-source network troubleshooting and diagnostics for intermittent connectivity, DNS, IPv4/IPv6, VPN, TLS a…  
+`JavaScript`
+
+**[sdwan-mcp-server](https://github.com/weegienamja/sdwan-mcp-server)**  
+Active public repository.  
+`Python`
 
 <!-- PROFILE:PROJECTS:END -->
 

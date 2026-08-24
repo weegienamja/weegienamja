@@ -49,44 +49,52 @@
 
 <g transform="translate(78 316)">
   <line x1="0" y1="0" x2="1044" y2="0" stroke="#1B2732"/>
-  <g transform="translate(0 34)"><text class="mono metricLabel">PUBLIC SYSTEMS</text><text y="29" class="sans metric">8</text></g>
-  <g transform="translate(190 34)"><text class="mono metricLabel">ACTIVE / 30D</text><text y="29" class="sans metric">5</text></g>
-  <g transform="translate(365 34)"><text class="mono metricLabel">FEATURED LANGUAGES</text><text y="29" class="sans metric">2</text></g>
+  <g transform="translate(0 34)"><text class="mono metricLabel">PUBLIC SYSTEMS</text><text y="29" class="sans metric">9</text></g>
+  <g transform="translate(190 34)"><text class="mono metricLabel">ACTIVE / 30D</text><text y="29" class="sans metric">4</text></g>
+  <g transform="translate(365 34)"><text class="mono metricLabel">FEATURED LANGUAGES</text><text y="29" class="sans metric">3</text></g>
   <g transform="translate(584 34)"><text class="mono metricLabel">DISCOVERY MODE</text><text y="29" class="sans metric" fill="#70E1C8">AUTO</text></g>
   <text x="1044" y="53" text-anchor="end" class="mono tiny muted">SYNCED FROM GITHUB API</text>
 </g>
 
   <g transform="translate(78 402)">
     <rect width="486" height="104" rx="18" fill="#0B1017" stroke="#1C2734"/>
-    <text x="20" y="27" class="mono tiny muted">01 / TYPESCRIPT</text>
+    <text x="20" y="27" class="mono tiny muted">01 / PYTHON</text>
     <text x="20" y="55" class="sans project">Switch-Ops</text>
-    <text x="20" y="80" class="sans small muted">Network discovery and operations tooling for Cisco infrastructure.</text>
-    <text x="392" y="27" text-anchor="end" class="mono tiny accent">V0.8</text>
-    <circle cx="452" cy="23" r="4" fill="#70E1C8"><animate attributeName="opacity" values=".35;1;.35" dur="3.4s" repeatCount="indefinite"/></circle>
+    <text x="20" y="80" class="sans small muted">Local-first Cisco Catalyst operations with live telemetry, evidence-awa…</text>
+    <text x="392" y="27" text-anchor="end" class="mono tiny accent">V0.6.0</text>
+    <circle cx="452" cy="23" r="4" fill="#70E1C8">
+      <animate attributeName="opacity" values=".35;1;.35" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
   </g>
   <g transform="translate(600 402)">
     <rect width="486" height="104" rx="18" fill="#0B1017" stroke="#1C2734"/>
     <text x="20" y="27" class="mono tiny muted">02 / TYPESCRIPT</text>
-    <text x="20" y="55" class="sans project">Faultline-Network-Diagnostics</text>
-    <text x="20" y="80" class="sans small muted">Local-first network investigation, diagnostics and change assurance.</text>
-    <text x="392" y="27" text-anchor="end" class="mono tiny accent">TODAY</text>
-    <circle cx="452" cy="23" r="4" fill="#70E1C8"><animate attributeName="opacity" values=".35;1;.35" dur="3.95s" repeatCount="indefinite"/></circle>
+    <text x="20" y="55" class="sans project">WindForge</text>
+    <text x="20" y="80" class="sans small muted">Evidence-aware TypeScript tools and a public demo for preliminary wind-…</text>
+    <text x="392" y="27" text-anchor="end" class="mono tiny accent">2D AGO</text>
+    <circle cx="452" cy="23" r="4" fill="#70E1C8">
+      <animate attributeName="opacity" values=".35;1;.35" dur="3.95s" repeatCount="indefinite"/>
+    </circle>
   </g>
   <g transform="translate(78 530)">
     <rect width="486" height="104" rx="18" fill="#0B1017" stroke="#1C2734"/>
-    <text x="20" y="27" class="mono tiny muted">03 / PYTHON</text>
-    <text x="20" y="55" class="sans project">sdwan-mcp-server</text>
-    <text x="20" y="80" class="sans small muted">Deterministic MCP tooling for investigating Cisco SD-WAN telemetry.</text>
-    <text x="392" y="27" text-anchor="end" class="mono tiny accent">1D AGO</text>
-    <circle cx="452" cy="23" r="4" fill="#70E1C8"><animate attributeName="opacity" values=".35;1;.35" dur="4.5s" repeatCount="indefinite"/></circle>
+    <text x="20" y="27" class="mono tiny muted">03 / JAVASCRIPT</text>
+    <text x="20" y="55" class="sans project">Faultline-Network-Diagnostics</text>
+    <text x="20" y="80" class="sans small muted">Open-source network troubleshooting and diagnostics for intermittent co…</text>
+    <text x="392" y="27" text-anchor="end" class="mono tiny accent">3D AGO</text>
+    <circle cx="452" cy="23" r="4" fill="#70E1C8">
+      <animate attributeName="opacity" values=".35;1;.35" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
   </g>
   <g transform="translate(600 530)">
     <rect width="486" height="104" rx="18" fill="#0B1017" stroke="#1C2734"/>
-    <text x="20" y="27" class="mono tiny muted">04 / TYPESCRIPT</text>
-    <text x="20" y="55" class="sans project">WindForge</text>
-    <text x="20" y="80" class="sans small muted">Wind infrastructure site screening built around geospatial constraints…</text>
-    <text x="392" y="27" text-anchor="end" class="mono tiny accent">3D AGO</text>
-    <circle cx="452" cy="23" r="4" fill="#70E1C8"><animate attributeName="opacity" values=".35;1;.35" dur="5.05s" repeatCount="indefinite"/></circle>
+    <text x="20" y="27" class="mono tiny muted">04 / PYTHON</text>
+    <text x="20" y="55" class="sans project">sdwan-mcp-server</text>
+    <text x="20" y="80" class="sans small muted">Active public repository.</text>
+    <text x="392" y="27" text-anchor="end" class="mono tiny accent">2D AGO</text>
+    <circle cx="452" cy="23" r="4" fill="#70E1C8">
+      <animate attributeName="opacity" values=".35;1;.35" dur="5.05s" repeatCount="indefinite"/>
+    </circle>
   </g>
 <text x="78" y="652" class="mono tiny muted">GLASGOW, SCOTLAND</text>
 <text x="1122" y="652" text-anchor="end" class="mono tiny muted">github.com/weegienamja</text>

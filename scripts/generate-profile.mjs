@@ -28,6 +28,37 @@ function clampText(value, max = 78) {
   return clean.length > max ? `${clean.slice(0, max - 1).trimEnd()}…` : clean;
 }
 
+function wrapText(value, maxLine = 58, maxLines = 2) {
+  const clean = String(value || '').replace(/\s+/g, ' ').trim();
+  if (!clean) return ['Active public repository.'];
+
+  const words = clean.split(' ');
+  const lines = [];
+  let current = '';
+
+  while (words.length && lines.length < maxLines) {
+    const word = words.shift();
+    const candidate = current ? `${current} ${word}` : word;
+
+    if (candidate.length <= maxLine || !current) {
+      current = candidate;
+      continue;
+    }
+
+    lines.push(current);
+    current = word;
+  }
+
+  if (current && lines.length < maxLines) lines.push(current);
+
+  if (words.length) {
+    const lastIndex = lines.length - 1;
+    lines[lastIndex] = `${lines[lastIndex].replace(/[.,;:!?]?$/, '')}…`;
+  }
+
+  return lines.slice(0, maxLines);
+}
+
 function ageDays(iso) {
   return Math.max(0, (now - new Date(iso).getTime()) / 86_400_000);
 }
@@ -92,21 +123,24 @@ async function enrichFeatured(repos) {
 
 function projectCard(repo, index) {
   const x = 78 + (index % 2) * 522;
-  const y = 402 + Math.floor(index / 2) * 128;
+  const y = 402 + Math.floor(index / 2) * 140;
   const language = repo.language || 'Mixed';
   const status = clampText(repo.release?.tag_name || ageLabel(repo.pushed_at || repo.updated_at), 14);
-  const desc = clampText(repo.description || 'Active public repository.', 72);
+  const descLines = wrapText(repo.description || 'Active public repository.', 58, 2);
+  const desc = descLines
+    .map((line, lineIndex) => `<tspan x="20" y="${87 + lineIndex * 20}">${esc(line)}</tspan>`)
+    .join('');
   const n = String(index + 1).padStart(2, '0');
 
   return `
   <g transform="translate(${x} ${y})">
-    <rect width="486" height="104" rx="18" fill="#0B1017" stroke="#1C2734"/>
-    <text x="20" y="27" class="mono tiny muted">${n} / ${esc(language).toUpperCase()}</text>
-    <text x="20" y="55" class="sans project">${esc(repo.name)}</text>
-    <text x="20" y="80" class="sans small muted">${esc(desc)}</text>
-    <text x="392" y="27" text-anchor="end" class="mono tiny accent">${esc(status).toUpperCase()}</text>
-    <circle cx="452" cy="23" r="4" fill="#70E1C8">
-      <animate attributeName="opacity" values=".35;1;.35" dur="${3.4 + index * 0.55}s" repeatCount="indefinite"/>
+    <rect width="486" height="124" rx="18" fill="#0D151F" stroke="#273746" stroke-width="1.15"/>
+    <text x="20" y="28" class="mono tiny muted">${n} / ${esc(language).toUpperCase()}</text>
+    <text x="20" y="58" class="sans project">${esc(repo.name)}</text>
+    <text class="sans description">${desc}</text>
+    <text x="392" y="28" text-anchor="end" class="mono tiny accent">${esc(status).toUpperCase()}</text>
+    <circle cx="452" cy="24" r="4.5" fill="#70E1C8">
+      <animate attributeName="opacity" values=".45;1;.45" dur="${3.4 + index * 0.55}s" repeatCount="indefinite"/>
     </circle>
   </g>`;
 }
@@ -119,7 +153,7 @@ function buildSvg({ repos, featured }) {
   const cards = featured.map(projectCard).join('');
   const latestLabel = latest ? `${latest.name} · ${ageLabel(latest.pushed_at || latest.updated_at)}` : 'NO RECENT PUSH';
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" role="img" aria-labelledby="title desc">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="728" viewBox="0 0 1200 728" role="img" aria-labelledby="title desc">
 <title id="title">Jamie Blair | systems, networks and applied AI</title>
 <desc id="desc">Live GitHub profile telemetry generated from Jamie Blair's public repositories.</desc>
 <defs>
@@ -137,17 +171,17 @@ function buildSvg({ repos, featured }) {
   <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
     <path d="M32 0H0V32" fill="none" stroke="#8AA0B5" stroke-opacity=".055"/>
   </pattern>
-  <clipPath id="frameClip"><rect x="28" y="28" width="1144" height="634" rx="26"/></clipPath>
+  <clipPath id="frameClip"><rect x="28" y="28" width="1144" height="672" rx="26"/></clipPath>
   <style>
-    .sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace}.hero{font-size:58px;font-weight:700;letter-spacing:-2px;fill:#F4F7FA}.kicker{font-size:13px;font-weight:650;letter-spacing:2.4px;fill:#7F94A8}.lede{font-size:21px;font-weight:430;fill:#B9C5D0}.small{font-size:13px}.tiny{font-size:11px;letter-spacing:.9px}.muted{fill:#7F94A8}.accent{fill:#75D7FF}.project{font-size:18px;font-weight:650;fill:#EFF5F8}.metric{font-size:24px;font-weight:650;fill:#EEF5F8}.metricLabel{font-size:10px;letter-spacing:1.3px;fill:#6F8294}@media(prefers-reduced-motion:reduce){.motion{display:none}}
+    .sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace}.hero{font-size:58px;font-weight:700;letter-spacing:-2px;fill:#F4F7FA}.kicker{font-size:13px;font-weight:650;letter-spacing:2.4px;fill:#8FA4B7}.lede{font-size:21px;font-weight:430;fill:#C3CFD9}.description{font-size:14px;font-weight:430;fill:#B8C8D6}.tiny{font-size:12px;letter-spacing:.8px}.muted{fill:#95A9BB}.accent{fill:#75D7FF}.project{font-size:19px;font-weight:650;fill:#F4F8FA}.metric{font-size:24px;font-weight:650;fill:#F4F8FA}.metricLabel{font-size:11px;letter-spacing:1.15px;fill:#879CAF}@media(prefers-reduced-motion:reduce){.motion{display:none}}
   </style>
 </defs>
-<rect width="1200" height="690" fill="url(#bg)"/>
-<rect width="1200" height="690" fill="url(#grid)"/>
+<rect width="1200" height="728" fill="url(#bg)"/>
+<rect width="1200" height="728" fill="url(#grid)"/>
 <circle cx="930" cy="135" r="300" fill="url(#glow)"/>
-<rect x="28" y="28" width="1144" height="634" rx="26" fill="none" stroke="#1B2530"/>
+<rect x="28" y="28" width="1144" height="672" rx="26" fill="none" stroke="#263644" stroke-width="1.15"/>
 <g clip-path="url(#frameClip)" class="motion" opacity=".55">
-  <rect x="-260" y="28" width="180" height="634" fill="url(#accentLine)" opacity=".08"><animate attributeName="x" from="-260" to="1280" dur="11s" repeatCount="indefinite"/></rect>
+  <rect x="-260" y="28" width="180" height="672" fill="url(#accentLine)" opacity=".08"><animate attributeName="x" from="-260" to="1280" dur="11s" repeatCount="indefinite"/></rect>
 </g>
 <text x="78" y="82" class="mono kicker">JAMIE BLAIR / ENGINEERING PROFILE</text>
 <text x="78" y="154" class="sans hero">Systems that make</text>
@@ -155,10 +189,10 @@ function buildSvg({ repos, featured }) {
 <text x="78" y="262" class="sans lede">Networks · automation · applied AI · product systems</text>
 
 <g transform="translate(786 72)">
-  <rect width="336" height="214" rx="20" fill="#0A1016" stroke="#1E2A36"/>
+  <rect width="336" height="214" rx="20" fill="#0C141D" stroke="#2A3A49" stroke-width="1.15"/>
   <text x="22" y="34" class="mono tiny muted">LIVE / PUBLIC REPOSITORY TELEMETRY</text>
-  <path d="M24 95C75 61 119 128 171 92S267 50 312 87" fill="none" stroke="#2C4659" stroke-width="1.2"/>
-  <path d="M24 150C86 131 123 154 165 126S247 119 312 150" fill="none" stroke="#203746" stroke-width="1.2"/>
+  <path d="M24 95C75 61 119 128 171 92S267 50 312 87" fill="none" stroke="#39586D" stroke-width="1.35"/>
+  <path d="M24 150C86 131 123 154 165 126S247 119 312 150" fill="none" stroke="#2D4759" stroke-width="1.35"/>
   <g class="motion">
     <circle r="4" fill="#75D7FF"><animateMotion path="M24 95C75 61 119 128 171 92S267 50 312 87" dur="5.8s" repeatCount="indefinite"/></circle>
     <circle r="3" fill="#70E1C8"><animateMotion path="M24 150C86 131 123 154 165 126S247 119 312 150" dur="7.2s" repeatCount="indefinite"/></circle>
@@ -169,16 +203,16 @@ function buildSvg({ repos, featured }) {
 </g>
 
 <g transform="translate(78 316)">
-  <line x1="0" y1="0" x2="1044" y2="0" stroke="#1B2732"/>
-  <g transform="translate(0 34)"><text class="mono metricLabel">PUBLIC SYSTEMS</text><text y="29" class="sans metric">${publicRepos.length}</text></g>
-  <g transform="translate(190 34)"><text class="mono metricLabel">ACTIVE / 30D</text><text y="29" class="sans metric">${active30}</text></g>
-  <g transform="translate(365 34)"><text class="mono metricLabel">FEATURED LANGUAGES</text><text y="29" class="sans metric">${Math.max(1, languages.length)}</text></g>
-  <g transform="translate(584 34)"><text class="mono metricLabel">DISCOVERY MODE</text><text y="29" class="sans metric" fill="#70E1C8">AUTO</text></g>
-  <text x="1044" y="53" text-anchor="end" class="mono tiny muted">SYNCED FROM GITHUB API</text>
+  <line x1="0" y1="0" x2="1044" y2="0" stroke="#273846"/>
+  <g transform="translate(0 34)"><text class="mono metricLabel">PUBLIC SYSTEMS</text><text y="30" class="sans metric">${publicRepos.length}</text></g>
+  <g transform="translate(190 34)"><text class="mono metricLabel">ACTIVE / 30D</text><text y="30" class="sans metric">${active30}</text></g>
+  <g transform="translate(365 34)"><text class="mono metricLabel">FEATURED LANGUAGES</text><text y="30" class="sans metric">${Math.max(1, languages.length)}</text></g>
+  <g transform="translate(584 34)"><text class="mono metricLabel">DISCOVERY MODE</text><text y="30" class="sans metric" fill="#70E1C8">AUTO</text></g>
+  <text x="1044" y="54" text-anchor="end" class="mono tiny muted">SYNCED FROM GITHUB API</text>
 </g>
 ${cards}
-<text x="78" y="652" class="mono tiny muted">GLASGOW, SCOTLAND</text>
-<text x="1122" y="652" text-anchor="end" class="mono tiny muted">github.com/${USER}</text>
+<text x="78" y="690" class="mono tiny muted">GLASGOW, SCOTLAND</text>
+<text x="1122" y="690" text-anchor="end" class="mono tiny muted">github.com/${USER}</text>
 </svg>`;
 }
 

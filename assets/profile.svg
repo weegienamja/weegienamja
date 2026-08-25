@@ -71,7 +71,7 @@
     <text x="20" y="28" class="mono tiny muted">02 / TYPESCRIPT</text>
     <text x="20" y="58" class="sans project">WindForge</text>
     <text class="sans description"><tspan x="20" y="87">Evidence-aware TypeScript tools and a public demo for</tspan><tspan x="20" y="107">preliminary wind-site screening; not a planning…</tspan></text>
-    <text x="392" y="28" text-anchor="end" class="mono tiny accent">2D AGO</text>
+    <text x="392" y="28" text-anchor="end" class="mono tiny accent">3D AGO</text>
     <circle cx="452" cy="24" r="4.5" fill="#70E1C8">
       <animate attributeName="opacity" values=".45;1;.45" dur="3.95s" repeatCount="indefinite"/>
     </circle>
@@ -91,7 +91,7 @@
     <text x="20" y="28" class="mono tiny muted">04 / PYTHON</text>
     <text x="20" y="58" class="sans project">sdwan-mcp-server</text>
     <text class="sans description"><tspan x="20" y="87">Active public repository.</tspan></text>
-    <text x="392" y="28" text-anchor="end" class="mono tiny accent">2D AGO</text>
+    <text x="392" y="28" text-anchor="end" class="mono tiny accent">3D AGO</text>
     <circle cx="452" cy="24" r="4.5" fill="#70E1C8">
       <animate attributeName="opacity" values=".45;1;.45" dur="5.05s" repeatCount="indefinite"/>
     </circle>

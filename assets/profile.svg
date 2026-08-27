@@ -44,7 +44,7 @@
   </g>
   <circle cx="24" cy="95" r="4" fill="#55C7FF"/><circle cx="171" cy="92" r="4" fill="#55C7FF"/><circle cx="312" cy="87" r="4" fill="#70E1C8"/>
   <text x="24" y="189" class="mono tiny muted">LATEST PUSH</text>
-  <text x="312" y="189" text-anchor="end" class="mono tiny accent">SWITCH-OPS · 1D AGO</text>
+  <text x="312" y="189" text-anchor="end" class="mono tiny accent">SWITCH-OPS · 2D AGO</text>
 </g>
 
 <g transform="translate(78 316)">

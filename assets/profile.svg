@@ -81,7 +81,7 @@
     <text x="20" y="28" class="mono tiny muted">03 / JAVASCRIPT</text>
     <text x="20" y="58" class="sans project">Faultline-Network-Diagnostics</text>
     <text class="sans description"><tspan x="20" y="87">Open-source network troubleshooting and diagnostics for</tspan><tspan x="20" y="107">intermittent connectivity, DNS, IPv4/IPv6, VPN, TLS and…</tspan></text>
-    <text x="392" y="28" text-anchor="end" class="mono tiny accent">13D AGO</text>
+    <text x="392" y="28" text-anchor="end" class="mono tiny accent">14D AGO</text>
     <circle cx="452" cy="24" r="4.5" fill="#70E1C8">
       <animate attributeName="opacity" values=".45;1;.45" dur="4.5s" repeatCount="indefinite"/>
     </circle>

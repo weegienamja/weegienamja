@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/weegienamja/weegienamja/main/assets/profile.svg?v=9641548b7b" width="100%" alt="Jamie Blair | systems, networks and applied AI" />
+  <img src="https://raw.githubusercontent.com/weegienamja/weegienamja/main/assets/profile.svg?v=c575bcbfe0" width="100%" alt="Jamie Blair | systems, networks and applied AI" />
 </p>
 
 <p align="center">
@@ -12,6 +12,10 @@
 
 <!-- PROFILE:PROJECTS:START -->
 
+**[sdwan-mcp-server](https://github.com/weegienamja/sdwan-mcp-server)**  
+Active public repository.  
+`Python`
+
 **[WindForge](https://github.com/weegienamja/WindForge)**  
 Evidence-aware TypeScript tools and a public demo for preliminary wind-site screening; not a planning, compli…  
 `TypeScript`
@@ -23,10 +27,6 @@ Local-first Cisco Catalyst operations with live telemetry, evidence-aware topolo
 **[Faultline-Network-Diagnostics](https://github.com/weegienamja/Faultline-Network-Diagnostics)**  
 Open-source network troubleshooting and diagnostics for intermittent connectivity, DNS, IPv4/IPv6, VPN, TLS a…  
 `JavaScript`
-
-**[sdwan-mcp-server](https://github.com/weegienamja/sdwan-mcp-server)**  
-Active public repository.  
-`Python`
 
 <!-- PROFILE:PROJECTS:END -->
 

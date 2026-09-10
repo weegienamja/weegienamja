@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/weegienamja/weegienamja/main/assets/profile.svg?v=0d40538493" width="100%" alt="Jamie Blair | systems, networks and applied AI" />
+  <img src="https://raw.githubusercontent.com/weegienamja/weegienamja/main/assets/profile.svg?v=3bbf78728f" width="100%" alt="Jamie Blair | systems, networks and applied AI" />
 </p>
 
 <p align="center">
@@ -12,6 +12,10 @@
 
 <!-- PROFILE:PROJECTS:START -->
 
+**[SP-Revival-game-files](https://github.com/weegienamja/SP-Revival-game-files)**  
+Active public repository.  
+`Python`
+
 **[WindForge](https://github.com/weegienamja/WindForge)**  
 Evidence-aware TypeScript tools and a public demo for preliminary wind-site screening; not a planning, compli…  
 `TypeScript`
@@ -23,10 +27,6 @@ Active public repository.
 **[Switch-Ops](https://github.com/weegienamja/Switch-Ops)**  
 Local-first Cisco Catalyst operations with live telemetry, evidence-aware topology, state reconciliation, and…  
 `Python · v0.6.0`
-
-**[Faultline-Network-Diagnostics](https://github.com/weegienamja/Faultline-Network-Diagnostics)**  
-Open-source network troubleshooting and diagnostics for intermittent connectivity, DNS, IPv4/IPv6, VPN, TLS a…  
-`JavaScript`
 
 <!-- PROFILE:PROJECTS:END -->
 

@@ -50,7 +50,7 @@
 <g transform="translate(78 316)">
   <line x1="0" y1="0" x2="1044" y2="0" stroke="#273846"/>
   <g transform="translate(0 34)"><text class="mono metricLabel">PUBLIC SYSTEMS</text><text y="30" class="sans metric">9</text></g>
-  <g transform="translate(190 34)"><text class="mono metricLabel">ACTIVE / 30D</text><text y="30" class="sans metric">3</text></g>
+  <g transform="translate(190 34)"><text class="mono metricLabel">ACTIVE / 30D</text><text y="30" class="sans metric">2</text></g>
   <g transform="translate(365 34)"><text class="mono metricLabel">FEATURED LANGUAGES</text><text y="30" class="sans metric">3</text></g>
   <g transform="translate(584 34)"><text class="mono metricLabel">DISCOVERY MODE</text><text y="30" class="sans metric" fill="#70E1C8">AUTO</text></g>
   <text x="1044" y="54" text-anchor="end" class="mono tiny muted">SYNCED FROM GITHUB API</text>
@@ -71,7 +71,7 @@
     <text x="20" y="28" class="mono tiny muted">02 / TYPESCRIPT</text>
     <text x="20" y="58" class="sans project">WindForge</text>
     <text class="sans description"><tspan x="20" y="87">Evidence-aware TypeScript tools and a public demo for</tspan><tspan x="20" y="107">preliminary wind-site screening; not a planning…</tspan></text>
-    <text x="392" y="28" text-anchor="end" class="mono tiny accent">21D AGO</text>
+    <text x="392" y="28" text-anchor="end" class="mono tiny accent">22D AGO</text>
     <circle cx="452" cy="24" r="4.5" fill="#70E1C8">
       <animate attributeName="opacity" values=".45;1;.45" dur="3.95s" repeatCount="indefinite"/>
     </circle>

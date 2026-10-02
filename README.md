@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/weegienamja/weegienamja/main/assets/profile.svg?v=af17bdcb81" width="100%" alt="Jamie Blair | systems, networks and applied AI" />
+  <img src="https://raw.githubusercontent.com/weegienamja/weegienamja/main/assets/profile.svg?v=aae2276012" width="100%" alt="Jamie Blair | systems, networks and applied AI" />
 </p>
 
 <p align="center">

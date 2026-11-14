@@ -1,101 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="728" viewBox="0 0 1200 728" role="img" aria-labelledby="title desc">
-<title id="title">Jamie Blair | systems, networks and applied AI</title>
-<desc id="desc">Live GitHub profile telemetry generated from Jamie Blair's public repositories.</desc>
-<defs>
-  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
-    <stop offset="0" stop-color="#06080B"/><stop offset="1" stop-color="#0A0F15"/>
-  </linearGradient>
-  <linearGradient id="accentLine" x1="0" x2="1">
-    <stop offset="0" stop-color="#55C7FF" stop-opacity=".05"/>
-    <stop offset=".5" stop-color="#55C7FF" stop-opacity=".9"/>
-    <stop offset="1" stop-color="#70E1C8" stop-opacity=".05"/>
-  </linearGradient>
-  <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-    <stop offset="0" stop-color="#55C7FF" stop-opacity=".16"/><stop offset="1" stop-color="#55C7FF" stop-opacity="0"/>
-  </radialGradient>
-  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-    <path d="M32 0H0V32" fill="none" stroke="#8AA0B5" stroke-opacity=".055"/>
-  </pattern>
-  <clipPath id="frameClip"><rect x="28" y="28" width="1144" height="672" rx="26"/></clipPath>
-  <style>
-    .sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace}.hero{font-size:58px;font-weight:700;letter-spacing:-2px;fill:#F4F7FA}.kicker{font-size:13px;font-weight:650;letter-spacing:2.4px;fill:#8FA4B7}.lede{font-size:21px;font-weight:430;fill:#C3CFD9}.description{font-size:14px;font-weight:430;fill:#B8C8D6}.tiny{font-size:12px;letter-spacing:.8px}.muted{fill:#95A9BB}.accent{fill:#75D7FF}.project{font-size:19px;font-weight:650;fill:#F4F8FA}.metric{font-size:24px;font-weight:650;fill:#F4F8FA}.metricLabel{font-size:11px;letter-spacing:1.15px;fill:#879CAF}@media(prefers-reduced-motion:reduce){.motion{display:none}}
-  </style>
-</defs>
-<rect width="1200" height="728" fill="url(#bg)"/>
-<rect width="1200" height="728" fill="url(#grid)"/>
-<circle cx="930" cy="135" r="300" fill="url(#glow)"/>
-<rect x="28" y="28" width="1144" height="672" rx="26" fill="none" stroke="#263644" stroke-width="1.15"/>
-<g clip-path="url(#frameClip)" class="motion" opacity=".55">
-  <rect x="-260" y="28" width="180" height="672" fill="url(#accentLine)" opacity=".08"><animate attributeName="x" from="-260" to="1280" dur="11s" repeatCount="indefinite"/></rect>
-</g>
-<text x="78" y="82" class="mono kicker">JAMIE BLAIR / ENGINEERING PROFILE</text>
-<text x="78" y="154" class="sans hero">Systems that make</text>
-<text x="78" y="216" class="sans hero">infrastructure legible.</text>
-<text x="78" y="262" class="sans lede">Networks · automation · applied AI · product systems</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="176" viewBox="0 0 960 176" role="img" aria-labelledby="title desc">
+  <title id="title">Jamie Blair</title>
+  <desc id="desc">A dark teal nameplate with a drawing of a network switch and two connected patch cables.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop stop-color="#0d2023"/>
+      <stop offset="1" stop-color="#123238"/>
+    </linearGradient>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="8" r="0.95" fill="#96c3bb" opacity=".22"/>
+    </pattern>
+    <g id="port" stroke-linejoin="round">
+      <path d="M0 0h21v12h-5v3H5v-3H0z" fill="#0a1c20" stroke="#78aaa3" stroke-width="1.3"/>
+      <path d="M4 3v3m3-3v3m3-3v3m3-3v3m3-3v3" stroke="#a1bbb2" stroke-width="1"/>
+    </g>
+    <g id="vents" fill="none" stroke="#49706f" stroke-width="2" stroke-linecap="round">
+      <path d="m0 0 15-9m-3 9 15-9m-3 9 15-9m-3 9 15-9m-3 9 15-9m-3 9 15-9"/>
+    </g>
+    <style>
+      @media (prefers-reduced-motion: no-preference) {
+        .link-light { animation: activity 4s steps(1, end) infinite; }
+        @keyframes activity {
+          0%, 68%, 78%, 100% { opacity: 1; }
+          72%, 82% { opacity: .35; }
+        }
+      }
+    </style>
+  </defs>
 
-<g transform="translate(786 72)">
-  <rect width="336" height="214" rx="20" fill="#0C141D" stroke="#2A3A49" stroke-width="1.15"/>
-  <text x="22" y="34" class="mono tiny muted">LIVE / PUBLIC REPOSITORY TELEMETRY</text>
-  <path d="M24 95C75 61 119 128 171 92S267 50 312 87" fill="none" stroke="#39586D" stroke-width="1.35"/>
-  <path d="M24 150C86 131 123 154 165 126S247 119 312 150" fill="none" stroke="#2D4759" stroke-width="1.35"/>
-  <g class="motion">
-    <circle r="4" fill="#75D7FF"><animateMotion path="M24 95C75 61 119 128 171 92S267 50 312 87" dur="5.8s" repeatCount="indefinite"/></circle>
-    <circle r="3" fill="#70E1C8"><animateMotion path="M24 150C86 131 123 154 165 126S247 119 312 150" dur="7.2s" repeatCount="indefinite"/></circle>
-  </g>
-  <circle cx="24" cy="95" r="4" fill="#55C7FF"/><circle cx="171" cy="92" r="4" fill="#55C7FF"/><circle cx="312" cy="87" r="4" fill="#70E1C8"/>
-  <text x="24" y="189" class="mono tiny muted">LATEST PUSH</text>
-  <text x="312" y="189" text-anchor="end" class="mono tiny accent">WINDFORGE · 7D AGO</text>
-</g>
-
-<g transform="translate(78 316)">
-  <line x1="0" y1="0" x2="1044" y2="0" stroke="#273846"/>
-  <g transform="translate(0 34)"><text class="mono metricLabel">PUBLIC SYSTEMS</text><text y="30" class="sans metric">9</text></g>
-  <g transform="translate(190 34)"><text class="mono metricLabel">ACTIVE / 30D</text><text y="30" class="sans metric">1</text></g>
-  <g transform="translate(365 34)"><text class="mono metricLabel">FEATURED LANGUAGES</text><text y="30" class="sans metric">3</text></g>
-  <g transform="translate(584 34)"><text class="mono metricLabel">DISCOVERY MODE</text><text y="30" class="sans metric" fill="#70E1C8">AUTO</text></g>
-  <text x="1044" y="54" text-anchor="end" class="mono tiny muted">SYNCED FROM GITHUB API</text>
-</g>
-
-  <g transform="translate(78 402)">
-    <rect width="486" height="124" rx="18" fill="#0D151F" stroke="#273746" stroke-width="1.15"/>
-    <text x="20" y="28" class="mono tiny muted">01 / TYPESCRIPT</text>
-    <text x="20" y="58" class="sans project">WindForge</text>
-    <text class="sans description"><tspan x="20" y="87">Evidence-aware TypeScript tools and a public demo for</tspan><tspan x="20" y="107">preliminary wind-site screening; not a planning…</tspan></text>
-    <text x="392" y="28" text-anchor="end" class="mono tiny accent">7D AGO</text>
-    <circle cx="452" cy="24" r="4.5" fill="#70E1C8">
-      <animate attributeName="opacity" values=".45;1;.45" dur="3.4s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-  <g transform="translate(600 402)">
-    <rect width="486" height="124" rx="18" fill="#0D151F" stroke="#273746" stroke-width="1.15"/>
-    <text x="20" y="28" class="mono tiny muted">02 / PYTHON</text>
-    <text x="20" y="58" class="sans project">sdwan-mcp-server</text>
-    <text class="sans description"><tspan x="20" y="87">Active public repository.</tspan></text>
-    <text x="392" y="28" text-anchor="end" class="mono tiny accent">1MO AGO</text>
-    <circle cx="452" cy="24" r="4.5" fill="#70E1C8">
-      <animate attributeName="opacity" values=".45;1;.45" dur="3.95s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-  <g transform="translate(78 542)">
-    <rect width="486" height="124" rx="18" fill="#0D151F" stroke="#273746" stroke-width="1.15"/>
-    <text x="20" y="28" class="mono tiny muted">03 / JAVASCRIPT</text>
-    <text x="20" y="58" class="sans project">Faultline-Network-Diagnostics</text>
-    <text class="sans description"><tspan x="20" y="87">Open-source network troubleshooting and diagnostics for</tspan><tspan x="20" y="107">intermittent connectivity, DNS, IPv4/IPv6, VPN, TLS and…</tspan></text>
-    <text x="392" y="28" text-anchor="end" class="mono tiny accent">2MO AGO</text>
-    <circle cx="452" cy="24" r="4.5" fill="#70E1C8">
-      <animate attributeName="opacity" values=".45;1;.45" dur="4.5s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-  <g transform="translate(600 542)">
-    <rect width="486" height="124" rx="18" fill="#0D151F" stroke="#273746" stroke-width="1.15"/>
-    <text x="20" y="28" class="mono tiny muted">04 / PYTHON</text>
-    <text x="20" y="58" class="sans project">Switch-Ops</text>
-    <text class="sans description"><tspan x="20" y="87">Local-first Cisco Catalyst operations with live telemetry,</tspan><tspan x="20" y="107">evidence-aware topology, state reconciliation, and safe…</tspan></text>
-    <text x="392" y="28" text-anchor="end" class="mono tiny accent">V0.6.0</text>
-    <circle cx="452" cy="24" r="4.5" fill="#70E1C8">
-      <animate attributeName="opacity" values=".45;1;.45" dur="5.05s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-<text x="78" y="690" class="mono tiny muted">GLASGOW, SCOTLAND</text>
-<text x="1122" y="690" text-anchor="end" class="mono tiny muted">github.com/weegienamja</text>
+  <rect width="960" height="176" rx="10" fill="url(#background)"/>
+  <svg x="516" y="0" width="444" height="176" viewBox="0 0 444 176" fill="none">
+    <rect x="12" y="12" width="420" height="152" fill="url(#dots)"/>
+    <!-- Switch enclosure, vents and front panel. -->
+    <g stroke-linejoin="round" stroke-width="1.6">
+      <path d="m70 74 55-33h204l-55 33z" fill="#315556" stroke="#8eb8ad"/>
+      <path d="m274 74 55-33v38l-55 33z" fill="#143337" stroke="#78a199"/>
+      <path d="M70 74h204v38H70z" fill="#254448" stroke="#9abbaf"/>
+    </g>
+    <use href="#vents" x="144" y="63"/>
+    <g fill="#bdd6c8">
+      <circle cx="81" cy="88" r="2.2"/>
+      <circle cx="81" cy="97" r="2.2" fill="#6bd7be" class="link-light"/>
+    </g>
+    <g>
+      <use href="#port" x="97" y="85"/>
+      <use href="#port" x="125" y="85"/>
+      <use href="#port" x="153" y="85"/>
+      <use href="#port" x="181" y="85"/>
+      <use href="#port" x="209" y="85"/>
+      <use href="#port" x="237" y="85"/>
+    </g>
+    <!-- Two seated patch leads, shown at their actual ports. -->
+    <g stroke-linecap="round" stroke-linejoin="round">
+      <path d="M135 102v19q0 16 16 16h126q17 0 30 13l29 29" stroke="#0c282c" stroke-width="9"/>
+      <path d="M135 102v19q0 16 16 16h126q17 0 30 13l29 29" stroke="#58bba9" stroke-width="5"/>
+      <path d="M219 102v13q0 10 11 10h55q20 0 33-13l21-21q12-12 30-12h43" stroke="#0c282c" stroke-width="9"/>
+      <path d="M219 102v13q0 10 11 10h55q20 0 33-13l21-21q12-12 30-12h43" stroke="#a6cdbb" stroke-width="5"/>
+    </g>
+    <g stroke-width="1.3" stroke-linejoin="round">
+      <path d="M128 88h14v12l-3 6h-8l-3-6z" fill="#438b81" stroke="#a4e0cb"/>
+      <path d="M212 88h14v12l-3 6h-8l-3-6z" fill="#88ad9f" stroke="#d0e2ce"/>
+      <path d="M131 92h8m-8 4h8m76-4h8m-8 4h8" stroke="#254b49"/>
+    </g>
+  </svg>
+  <text x="46" y="115" fill="#eff6ee" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="78" font-weight="650" letter-spacing="-3.2">Jamie Blair</text>
 </svg>

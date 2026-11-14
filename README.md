@@ -1,39 +1,23 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/weegienamja/weegienamja/main/assets/profile.svg?v=e51b01a96c" width="100%" alt="Jamie Blair | systems, networks and applied AI" />
-</p>
+![Jamie Blair](https://raw.githubusercontent.com/weegienamja/weegienamja/main/assets/profile.svg)
 
-<p align="center">
-  <a href="https://jamieblair.co.uk">Portfolio</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/jamie-blair-glasgow/">LinkedIn</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://github.com/weegienamja?tab=repositories">Repositories</a>
-</p>
+I'm a software engineer in Glasgow. I spent five years at Cisco working on networking, software and automation.
 
-## Selected systems
+[Portfolio](https://jamieblair.co.uk) · [LinkedIn](https://www.linkedin.com/in/jamie-blair-glasgow/)
 
-<!-- PROFILE:PROJECTS:START -->
+## Independent projects
 
-**[WindForge](https://github.com/weegienamja/WindForge)**  
-Evidence-aware TypeScript tools and a public demo for preliminary wind-site screening; not a planning, compli…  
-`TypeScript`
+### [Faultline](https://github.com/weegienamja/Faultline-Network-Diagnostics)
 
-**[sdwan-mcp-server](https://github.com/weegienamja/sdwan-mcp-server)**  
-Active public repository.  
-`Python`
+When a connection works over IPv4 but fails over IPv6, Faultline tests both paths and saves the results for the next person investigating. [Run it locally](https://github.com/weegienamja/Faultline-Network-Diagnostics#run-locally)
 
-**[Faultline-Network-Diagnostics](https://github.com/weegienamja/Faultline-Network-Diagnostics)**  
-Open-source network troubleshooting and diagnostics for intermittent connectivity, DNS, IPv4/IPv6, VPN, TLS a…  
-`JavaScript`
+### [SwitchOps](https://github.com/weegienamja/Switch-Ops)
 
-**[Switch-Ops](https://github.com/weegienamja/Switch-Ops)**  
-Local-first Cisco Catalyst operations with live telemetry, evidence-aware topology, state reconciliation, and…  
-`Python · v0.6.0`
+A Windows app for Cisco Catalyst switches. Inspect a port, review a proposed change, then compare the switch state before and after. [Windows installer](https://github.com/weegienamja/Switch-Ops/releases/latest)
 
-<!-- PROFILE:PROJECTS:END -->
+### [Cisco vManage MCP Server](https://github.com/weegienamja/sdwan-mcp-server)
 
-## Current direction
+Gives AI assistants read-only access to Cisco SD-WAN. Ask which tunnels are unhealthy or which alarms might have a common cause.
 
-I build software around **infrastructure, automation and applied AI**, with a preference for systems that expose real state instead of hiding it behind a conversational layer.
+### [WindForge](https://github.com/weegienamja/WindForge)
 
-The profile telemetry above is generated from my public GitHub repositories. Project selection, activity, languages, release tags and the cache key are refreshed automatically by GitHub Actions.
-
-<sub>Glasgow, Scotland · CCNA · Software Development BSc</sub>
+Pick a potential wind site to see how wind, terrain and grid access affect its screening score. If required data is missing, WindForge shows the gap and withholds the score. [Try the demo](https://windforge.khmer-iq.workers.dev/)
